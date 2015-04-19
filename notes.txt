@@ -1,0 +1,6 @@
+
+change text selection color - perhaps orange
+revisit what could actually go in the header - icons? github?
+change the quote font to have heavier serif
+change hyperlinks to be bolder and not underlined
+add a little bit of margin to the main content

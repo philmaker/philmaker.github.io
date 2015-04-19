@@ -1,0 +1,50 @@
+.header {
+  height:5px;
+}
+.content {
+  margin-left:5%;
+  margin-right:5%;
+}
+.pure-menu-heading {
+  text-transform:none;
+  align:right;
+  height:1px;
+}
+.content h3 {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.content p {
+  margin-top:3px;
+  margin-bottom:10px;
+}
+.content-subhead i {
+  margin-right: 6px;
+}
+cite {
+  font-size:150%;
+  color:white;
+  opacity:0.4;
+  font-family:serif;
+}
+.avatar {
+  border-radius:50%;
+  border:2px solid white;
+  transform:scale(0.8, 0.8);
+}
+.fa-certificate {
+  /*color:red;*/
+}
+.fa {
+  color:darkorange;
+}
+.fa-heart {
+  color:#CC0000;
+}
+a {
+  text-decoration:none;
+  font-weight:800;
+}
+a:hover {
+  text-decoration:underline;
+}
