@@ -1,6 +1,14 @@
 .header {
   height:5px;
 }
+.splash-subhead a {
+  text-decoration:none;
+  font-weight:100;
+  color:#FFFFFF;
+}
+.splash-subhead a:hover {
+  text-decoration:underline;
+}
 .content {
   margin-left:5%;
   margin-right:5%;
@@ -21,30 +29,119 @@
 .content-subhead i {
   margin-right: 6px;
 }
-cite {
-  font-size:150%;
-  color:white;
-  opacity:0.4;
-  font-family:serif;
+.footer {
+  padding-top:40px;
+  padding-bottom:40px;
+}
+.footer i {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+.footer a {
+  text-decoration:none;
+  color:inherit;
+}
+.footer a:hover {
+  text-decoration:underline;
 }
 .avatar {
   border-radius:50%;
-  border:2px solid white;
+  border:3px solid rgba(255,255,255,0.7);
   transform:scale(0.8, 0.8);
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 .fa-certificate {
   /*color:red;*/
 }
 .fa {
-  color:darkorange;
+  /*color:darkorange;*/
+  /*color:#2d3e50;*/
+  /*font-size:200%;*/
 }
 .fa-heart {
   color:#CC0000;
 }
-a {
+.content a {
   text-decoration:none;
   font-weight:800;
+  color:#7f8c8d;
 }
-a:hover {
+.content a:hover {
   text-decoration:underline;
 }
+.content-subhead {
+  font-size:125%; 
+}
+.draft {
+  display:block;
+}
+.public {
+  display:block;
+}
+.section-outline {
+  display:none;
+}
+.section-introduction {
+  display:block;
+  margin-left:20%;
+  margin-right:20%;
+}
+.section-introduction .content-head {
+  border:1px dotted gray;
+  padding:10px;
+  border-radius: 5px;
+}
+.section-introduction p {
+  font-size:130%;
+  line-height:30px;
+  text-align:left;
+}
+custom {
+  color:red;
+}
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+.ribbon cite {
+  font-size:150%;
+  color:white;
+  opacity:0.4;
+  font-family:serif;
+}
+/*.ribbon {*/
+/*    background: hsl(300, 40%, 50%);*/
+/*    color: #aaa;*/
+/*}*/
+/*.ribbon cite {*/
+/*  font-size:150%;*/
+/*  color:white;*/
+/*  opacity:0.7;*/
+/*  font-family:serif;*/
+/*}*/
+.github {display:block;}
+.section-outline {display:none;}
+.section-introduction {display:block;}
+.section-ribbon-one {display:block;}
+.section-technology-areas {display:block;}
+.section-ribbon-two {display:block;}
+.section-libraries {display:block;}
+.section-ribbon-three {display:block;}
+.section-last {display:block;}
+.section-beliefs {display:none;}
+.section-previous-work {display:none;}
+.section-ribbon-four {display:none;}
+
+/*.section-outline {display:block;}*/
+/*.section-introduction {display:block;}*/
+/*.section-technology-areas {display:block;}*/
+/*.section-ribbon-one {display:block;}*/
+/*.section-libraries {display:block;}*/
+/*.section-ribbon-two {display:block;}*/
+/*.section-beliefs {display:block;}*/
+/*.section-ribbon-three {display:block;}*/
+/*.section-previous-work {display:block;}*/
+/*.section-ribbon-four {display:block;}*/
+/*.section-last {display:block;}*/
