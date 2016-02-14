@@ -1,16 +1,588 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A layout example that shows off a responsive product landing page.">
-  <title>Philip Weaver : Software Developer</title>
-  <link rel="stylesheet" href="lib/pure/pure-min.css">
-  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Phil's Thrills</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .icon-block {
+      padding: 0 15px;
+    }
+    .icon-block .material-icons {
+    	font-size: inherit;
+    }
+    header, main, footer {
+      padding-left: 240px;
+    }
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+    section {
+      margin-bottom:100px;
+    }
+    .chip {
+      color:white;
+      background-color:#7777DD;
+      margin-top:2px;
+      margin-bottom:2px;
+    }
+    .major {
+      color:white;
+      background-color:#3333AA;
+    }
+    .skills .collapsible-body {
+      padding: 10px;
+    }
+    .fa {
+     margin-right:10px; 
+    }
+    .list {
+      padding:20px;
+    }
+    .list li {
+      list-style: disc;
+      margin-left:20px;
+    }
+  </style>
+  <script>
+    (function($){
+      $(function(){
+        $('.button-collapse').sideNav();
+      });
+    })(jQuery);
+  </script>
 </head>
 <body>
-  <script>
-    window.location.href = 'http://www.github.com/philmaker1';
-  </script>
-</body>
+  <header>
+    <nav class="pink darken-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><!--Logo--></a>
+        <ul id="nav-mobile" class="side-nav fixed">
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel grey lighten-3 z-depth-1">
+              <div class="row valign-wrapper">
+                <div class="col s12">
+                  <img src="http://findicons.com/files/icons/175/halloween_avatar/300/mike.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col s12 m8 offset-m2 l6 offset-l3">-->
+          <!--  <div class="card-panel grey lighten-3 z-depth-1">-->
+          <!--    <div class="row valign-wrapper">-->
+          <!--      <div class="col s12">-->
+          <!--        <div style="font-size:300%;background-color:red;corner-radius:20px;">-->
+          <!--          PW-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          <li><a href="#">Libraries</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Fun</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Errata</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </header>
+  <main class="grey lighten-4">
+    <div class="pink darken-1 section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header white-text">Phil's Thrills</h1>
+        <div class="row">
+          <h5 class="header col s12 light white-text">To foster simple principles in software development and design.</h5>
+          <!--<h5 class="header col s12 light white-text">Covering all sorts of software topics in the world today.</h5>-->
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Libraries & Tools I Use</h3>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="https://nodejs.org/static/images/logos/nodejs-2560x1440.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="https://superdevresources.com/wp-content/uploads/2014/11/materialze-framework-material-design.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Materialize is a modern responsive front-end framework based on Material Design.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://deepstream.io/blog/introducing-deepstreamhub/deepstream-hub-750.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>deepstream.io is a scalable server for realtime web apps.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="https://cdn-images-1.medium.com/max/2000/1*HBLB2yY_k8NicTZg17jDhQ.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Figma: The Collaborative Interface Design Tool</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://www.goodboydigital.com/wp-content/uploads/2013/02/logo.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>PixiJS is a 2D webGL renderer with canvas fallback.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://blog.workshape.io/content/images/2015/03/thinker_blog2.png">
+                <span class="card-title">RethinkDB</span>
+              </div>
+              <div class="card-content">
+                <p>RethinkDB is the open-source, scalable database that makes building realtime apps dramatically easier.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="https://pbs.twimg.com/media/CWb4J5cWUAASFjG.jpg">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>xeoEngine is an open source engine for Web-based 3D visualization.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://blog.atom.io/img/posts/linux-downloads.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Atom Editor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://www.roadtovr.com/wp-content/uploads/2015/12/mozilla-a-frame-webvr-virtual-reality-firefox.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>A-FRAME: Building blocks for the virtual reality web.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://freelancedevelopers.net/data/news/6512bd43d9caa6e02c990b0a82652dca.jpg">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>A full featured HTML framework for building iOS & Android apps.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://vuejs.org/images/logo.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Vue.js: Reactive Components for Modern Web Interfaces.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://blog.ineat-conseil.fr/wp-content/uploads/2015/04/Capture-d%E2%80%99%C3%A9cran-2015-04-21-%C3%A0-17.47.31.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Babel is a JavaScript compiler. Use next generation JavaScript, today.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://vertx.io/assets/logo-sm.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Vert.x is a tool-kit for building reactive applications on the JVM.</p>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="http://i.imgur.com/Wh59SPS.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Absurd.js</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Resume</h3>
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Objective</div>
+            <div class="collapsible-body"><p>Fostering simple principles in software development and design.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Highlights</div>
+            <div class="collapsible-body">
+              <ul class="list">
+                <li>More than ten years of software development experience using Java, Javascript, C, Objective-C, and other languages and tools.</li>
+                <li>Adept at locating and evaluating permissive open source software to assist with rapid development. Have also contributed to some open source projects online.</li>
+                <li>Major strengths in designing and creating highly intuitive, precise, and polite user interfaces: typically using hybrid mobile web applications, JavaScript everywhere, Cocoa Touch for mobile, and Java Swing.</li>
+                <li>Creative, talented, passionate, and highly adept at creating and assuring quality.</li>
+                <li>Mac OS X, Windows, and Linux experience.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="skills">
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Skills</div>
+            <div class="collapsible-body">
+              <div>
+                <span class="chip major">Standards</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">NodeJS</span>
+                <span class="chip">WebGL</span>
+                <span class="chip">JSON</span>
+                <span class="chip">Canvas Element</span>
+                <span class="chip">Web Components</span>
+                <span class="chip">HTML5</span>
+                <span class="chip">SVG</span>
+                <span class="chip">MQTT</span>
+              </div>  
+              <div>
+                <span class="chip major">Libraries</span>
+                <span class="chip">xeoEngine</span>
+                <span class="chip">ThreeJS</span>
+                <span class="chip">PlayCanvas</span>
+                <span class="chip">PixiJS</span>
+                <span class="chip">VueJS</span>
+                <span class="chip">ReactJS</span>
+                <span class="chip">Framework7</span>
+                <span class="chip">Google Polymer</span>
+                <span class="chip">AbsurdJS</span>
+                <span class="chip">Moment.js</span>
+                <span class="chip">chroma.js</span>
+                <span class="chip">socket.io</span>
+                <span class="chip">deepstream.io</span>
+                <span class="chip">BabelJS</span>
+              </div>  
+              <div>
+                <span class="chip major">Databases</span>
+                <span class="chip">RethinkDB</span>
+                <span class="chip">LevelDB</span>
+                <span class="chip">SQL</span>
+              </div>  
+              <div>
+                <span class="chip major">Patterns</span>
+                <span class="chip">Model-View-Controller</span>
+              </div>  
+              <div>
+                <span class="chip major">Concepts</span>
+                <span class="chip">Simplicity</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Neural Networks</span>
+                <span class="chip">Continuous Delivery</span>
+                <span class="chip">Scripting Graphics</span>
+                <span class="chip">Message Queues</span>
+                <span class="chip">Visualizations</span>
+                <span class="chip">Workflow Automation</span>
+                <span class="chip">Differential Synchronization</span>
+                <span class="chip">Procedural Vector Drawing</span>
+                <span class="chip">Turtle Graphics</span>
+                <span class="chip">Constructive Solid Geometry</span>
+                <span class="chip">Color Transformations</span>
+                <span class="chip">Lightweight Tooling</span>
+              </div>  
+              <div>
+                <span class="chip major">Applications</span>
+                <span class="chip">Bohemian Coding Sketch.app</span>
+                <span class="chip">GIT</span>
+                <span class="chip">Atom Editor</span>
+                <span class="chip">Atom Editor</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Interests</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Work History</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header active"><i class="material-icons">star_rate</i>Education</div>
+            <div class="collapsible-body"><p>The University of Texas at Austin, 1992</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Portfolio</h3>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="https://dl.dropboxusercontent.com/u/134114820/www/assets/screenshots-ordermatic/appetizers.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Point of sale for quick service restaurants</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit</a>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Transit Hybrid Mobile App</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="https://dl.dropboxusercontent.com/u/134114820/www/assets/screenshots-ordermatic/qtime.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Drive-thru timer</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>iQueue application</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Visit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Recent Exercises</h3>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="https://pbs.twimg.com/media/CZ1BErtXEAA9hNp.jpg">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Constructive solid geometry using CSG.js in xeoEngine.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://jsfiddle.net/philmaker/0e3hw1d4/">Take a look</a>
+              </div>
+            </div>
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="https://pbs.twimg.com/media/CXz8V_UWAAA2XQ7.png:large">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Editing voxels with entity picking in xeoEngine.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://jsfiddle.net/5ek3w0p8/8/">Take a look</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="https://neil.fraser.name/writing/sync/diff3a.gif">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Using differential synchronization for distributed microservices with Dialogo in NodeJS.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/philmaker1/dialogo-exercise">Take a look</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img class="materialboxed" src="http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png">
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>Menuing basics with PixiJS.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Take a look</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Articles</h3>
+        <ul class="collapsible" data-collapsible="accordian">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Simplicity</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Web Standards</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Object Literal Notation in JavaScript</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Intellectual Honesty</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Synchronization</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Workflow</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Design</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Open Source Software</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Learning</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Math</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Procedural Drawing</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Automated Testing</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Software Reuse</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">star_rate</i>On Distributed Systems</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3 class="pink-text darken-text-2">Errata</h3>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer pink darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="mailto:philmaker@gmail.com"><i class="fa fa-envelope"></i>philmaker@gmail.com</a></li>
+            <li><a class="white-text" href="http://github.com/philmaker1"><i class="fa fa-github"></i>github.com/philmaker1</a></li>
+            <li><a class="white-text" href="http://twitter.com/philmaker1"><i class="fa fa-twitter"></i>twitter.com/philmaker1</a></li>
+            <li><a class="white-text" href="tel:4058383009"><i class="fa fa-phone"></i>405-838-3009</a></li>
+            <li><a class="white-text" href="https://www.google.com/maps/place/Austin,+TX/"><i class="fa fa-map-marker"></i>Austin, Texas</a></li>
+            <span class="white-text">Status</span>
+            <div class="switch>"
+              <label>
+                <span class="white-text">Available</span>
+                <input type="checkbox" checked="true">
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div class="switch">
+              <label>
+                Available
+                <input disabled type="checkbox">
+                <span class="lever"></span>
+              </label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright 2016 Philip Weaver
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="lib/materialize/js/materialize.js"></script>
+
+  </body>
 </html>
